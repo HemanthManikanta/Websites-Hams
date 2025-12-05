@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MotherCare — Sweet Baby Names & Photos</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><span class="logo-heart">♡</span> MotherCare</h1>
+      <nav>
+        <button id="open-favorites" class="btn btn-primary">Favorites <span id="fav-count" class="badge">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="hero-title">Beautiful baby images & colourful names for every mum</h2>
+          <p class="hero-sub">Browse adorable photos, pick names you love, and save your favourites.</p>
+        </div>
+        <img class="hero-image" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80&auto=format&fit=crop" alt="Smiling baby" />
+      </div>
+    </section>
+
+    <section class="gallery container" aria-label="Baby name gallery">
+      <h3 class="section-title">Our curated picks</h3>
+      <div id="cards" class="cards-grid" role="list">
+        <!-- Cards rendered by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Favorites panel -->
+  <aside id="favorites-panel" class="favorites-panel" aria-hidden="true">
+    <div class="favorites-header">
+      <h4>Saved favourites</h4>
+      <div>
+        <button id="download-favs" class="btn">Download</button>
+        <button id="close-favorites" class="btn btn-ghost">Close</button>
+      </div>
+    </div>
+    <ul id="favorites-list" class="favorites-list" role="list">
+      <!-- Favorite items -->
+    </ul>
+  </aside>
+
+  <footer class="site-footer container">
+    <p>Made with ♥ for new mothers — MotherCare</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
